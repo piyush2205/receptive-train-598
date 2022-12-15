@@ -21,20 +21,22 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  
+  import { NavLink } from 'react-router-dom';
   import { Image } from '@chakra-ui/react'
   // import {ChevronDownIcon} from '@chakra-ui/icons'
-import img from "../Component/Surveyguru.png"
+import img from "../Images/Surveyguru1.png"
   
-  export default function WithSubnavigation() {
+  export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box >
+      <Box>
         <Flex
+          position="sticky"
+         
            bg={useColorModeValue('#fff')}
           color={useColorModeValue('#1e2124;', '#fff')}
-          minH={'80px'}
+          minH={'70px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
@@ -84,21 +86,26 @@ import img from "../Component/Surveyguru.png"
               fontWeight={600}
               variant={'link'}
               color={'#1e2124'}
-              href={'#'}>
+              href={'/login'}
+              textDecoration="none">
+              
               Log in
             </Button>
             <Button
-            
+              as={'a'}
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'m'}
               fontWeight={600}
               color={'#1e2124'}
               bg={'#f9be00'}
-              href={'#'}
+              href={'/signup'}
               _hover={{
                 bg: 'orange.300',
-              }}>
-              Sign Up free
+              }}
+              textDecoration="none">
+        
+            Sign Up free
+         
             </Button>
           </Stack>
         </Flex>
@@ -116,7 +123,7 @@ import img from "../Component/Surveyguru.png"
     const popoverContentBgColor = useColorModeValue('white', 'black.800');
   
     return (
-      <Stack direction={'row'} spacing={7} border="1px solid red">
+      <Stack direction={'row'} spacing={7} >
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -289,11 +296,11 @@ import img from "../Component/Surveyguru.png"
     );
   };
   
-  // const NavItem ={
-  //   label: string,
-  //   subLabel?: string,
-  //   children?: Array<NavItem>,
-  //   href?: string,
+  // interface NavItem {
+  //   label: string;
+  //   subLabel?: string;
+  //   children?: Array<NavItem>;
+  //   href?: string;
   // }
   
   const NAV_ITEMS = [
@@ -320,27 +327,9 @@ import img from "../Component/Surveyguru.png"
       
 
       ],
-      children2: [
-        {
-          label: 'SurveyMonkey1',
-          subLabel: 'Create & send surveys with the world’s leading online survey software',
-          href: '#',
-        },
-       
-
-        {
-          label: ' Enterprise1',
-          subLabel: 'Empower your organization with our secure survey platform',
-          href: '#',
-        },
-        {
-          label: 'Integrations & Plug-ins1',
-          subLabel: 'Bring survey insights into your business apps',
-          href: '#',
-        },
+     
       
 
-      ],
     },
     {
       label: 'Solutions',

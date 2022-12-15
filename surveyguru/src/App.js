@@ -1,13 +1,16 @@
 
 import './App.css';
-import WithSubnavigation from './Component/Navbar';
-import HomePage from './Component/homepage';
+
+import Navbar from './Pages/Navbar';
+import AllRoutes from './AllRoutes/AllRoutes';
 function App() {
   return (
    
  <>
-<WithSubnavigation/>
-  <HomePage/>
+
+ 
+  <AllRoutes/>
+ 
  </>
   
   );
