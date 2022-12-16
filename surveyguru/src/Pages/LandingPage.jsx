@@ -13,8 +13,14 @@ import Footer from "../Components/Footer"
 import Pricing from "../Components/Pricing";
 import BlogPostWithImage from "../Components/blog"
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
+const navigate=useNavigate()
+    const HandleGetStarted =()=>{
+             navigate( "/signup" )
+    }
+
     return (
         <>
         {/* navbar           ................................................................................. */}
@@ -42,6 +48,7 @@ export default function LandingPage() {
                                 Ask, listen, and act on insights fast with a global leader in surveys and forms software.
                             </p>
                             <Button mt="32px" bg="rgb(249, 190, 0)"
+                                onClick={HandleGetStarted}
                                 h="50px"
                                 p="0px 36px"
                                 position="relative"

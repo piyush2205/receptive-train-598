@@ -10,6 +10,7 @@ import {
   Flex,
   Tag,
   useColorModeValue,
+  List,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 
@@ -51,7 +52,7 @@ return(
              
 
 
-             <Flex  direction={"row"} gap="100px">
+             <Flex  direction={"row"} gap="100px" mt="-10px">
              <Box>
                 <Text>About Us:</Text>
               </Box>
@@ -89,29 +90,29 @@ return(
               </Flex>
              </Flex>
 
-             <Flex  direction={"row"} gap="100px">
+             <Flex  direction={"row"} gap="120px"  mt="-50px"> 
              <Box>
-                <Text>Policies::</Text>
+                <Text>Policies:</Text>
               </Box>
               <Flex direction={"row"} gap="20px" color="#73747A">
            
-                <Text>Developers</Text>
+                <Text>Terms of Use</Text>
               
                 <Text color="black">•</Text>
-                <Text>Facebook</Text>
+                <Text>Privacy Notice</Text>
              
                 <Text color="black">•</Text>
-                <Text>Twitter</Text>
+                <Text>California Privacy Notice</Text>
               
                 <Text color="black">•</Text>
-                <Text>Linkedin</Text>
+                <Text>Acceptable Uses Policy</Text>
              
                 <Text color="black">•</Text>
-                <Text>our blog</Text>
+                <Text>Security Statement</Text>
                 <Text color="black">•</Text>
-                <Text>Instagram</Text>
+                <Text>GDPR Compliance</Text>
                 <Text color="black">•</Text>
-                <Text>Youtube</Text>
+                <Text>Email Opt-In</Text>
              
               </Flex>
              </Flex>
@@ -122,23 +123,24 @@ return(
 
               <Flex direction={"row"} gap="20px" color="#73747A">
            
-                <Text>Developers</Text>
+                <Text>
+Online Polls</Text>
               
                 <Text color="black">•</Text>
-                <Text>Facebook</Text>
+                <Text>Facebook Surveys</Text>
              
                 <Text color="black">•</Text>
-                <Text>Twitter</Text>
+                <Text>Survey Template </Text>
               
                 <Text color="black">•</Text>
-                <Text>Linkedin</Text>
+                <Text>Scheduling Polls</Text>
              
                 <Text color="black">•</Text>
-                <Text>our blog</Text>
+                <Text>Google Forms vs. SurveyMonkey</Text>
                 <Text color="black">•</Text>
-                <Text>Instagram</Text>
+                <Text>Employee Satisfaction Surveys</Text>
                 <Text color="black">•</Text>
-                <Text>Youtube</Text>
+                <Text>Mobile Surveys</Text>
              
               </Flex>
              </Flex>
