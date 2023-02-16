@@ -7,3 +7,9 @@ myName:-piyush kumar singh
 batch:-fw19-1048
 
 # Deployed link :-https://surveyguru.vercel.app/
+
+
+# Home page
+
+![image](https://user-images.githubusercontent.com/106039415/219448529-0b1aa235-90e0-4ca1-a0f3-c27231a89c25.png)
+
