@@ -14,12 +14,14 @@ import {
   } from '@chakra-ui/react';
   import { CheckIcon } from '@chakra-ui/icons';
   import img from "../Images/Surveyguru.png"
-  
+   import "./pricing.css"
   export default function Pricing() {
     return (
-        <Flex direction="row"    mt="50px" gap={10}>
+        <Flex direction="row"    mt="50px" gap={10} >
       <Center py={6}  ml="250px" >
         <Box 
+          
+          className='pricing'
           maxW={'330px'}
           w={'315px'}
           h={"464px"}
@@ -27,8 +29,10 @@ import {
           boxShadow={'2xl'}
           rounded={'md'}
           overflow={'hidden'}>
-          <Stack bg="#00bf6f" 
-
+          <Stack 
+     
+            bg="#00bf6f" 
+            // border={"1px solid red"}
             textAlign={'center'}
              p={6}
             color='white'
@@ -44,13 +48,17 @@ import {
               Basic
             </Text>
           </Stack>
-          <Stack direction={'row'} align={'center'} justify={'center'} mt="30px">
+          <Stack 
+           
+          direction={'row'} align={'center'} justify={'center'} mt="30px">
              <Image src={img} alt="img"/>
             </Stack>
   
-          <Box bg={useColorModeValue('gray.50', 'gray.900')} px={6} py={10} margin="auto" >
+          <Box
+           
+          bg={useColorModeValue('gray.50', 'gray.900')} px={6} py={10} margin="auto" >
           <Button
-              mt={5}
+              mt={12}
               ml={90}
             //   w={'full'}
               bg={"#00bf6f"}
@@ -65,8 +73,8 @@ import {
               }}>
               Sign up
             </Button>
-
-            <p style={{marginTop:"20px" ,width:"150px",marginLeft:"70px" ,textAlign:"unset"}}>
+              
+            <p style={{ width:"250px", margin:"auto",marginTop:"20px", textAlign:"unset" }}>
           Send unlimited surveys with up to 10 questions. Response limits apply.
           </p>
   
@@ -78,7 +86,7 @@ import {
 
       <Center py={6} >
         <Box
-      
+         className='pricing'
           maxW={'330px'}
           w={'315px'}
           h={"464px"}
@@ -145,7 +153,7 @@ import {
 
       <Center py={6} >
         <Box
-        
+          className='pricing'
           maxW={'330px'}
           w={'315px'}
           h={"464px"}

@@ -25,15 +25,21 @@ import {
   import { Image } from '@chakra-ui/react'
   // import {ChevronDownIcon} from '@chakra-ui/icons'
 import img from "../Images/Surveyguru1.png"
-  
+import "./navbar.css"
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box>
+      <Box
+      
+      // border={"1px solid red"}
+      position="fixed"
+     className='css-1b7bwed'
+     zIndex={2}
+      >
         <Flex
-          position="sticky"
-         
+         minW={"1520px"}
+          border={"1px solid green"}
            bg={useColorModeValue('#fff')}
           color={useColorModeValue('#1e2124;', '#fff')}
           minH={'70px'}
@@ -44,6 +50,7 @@ import img from "../Images/Surveyguru1.png"
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
           <Flex
+          
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
             display={{ base: 'flex', md: 'none' }}>
@@ -75,6 +82,7 @@ import img from "../Images/Surveyguru1.png"
           </Flex>
   
           <Stack 
+          
             mr={90}
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
@@ -118,12 +126,12 @@ import img from "../Images/Surveyguru1.png"
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('black.800', 'black.800');
+    const linkColor = useColorModeValue('#6B787F', 'black.800');
     const linkHoverColor = useColorModeValue('black.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'black.800');
   
     return (
-      <Stack direction={'row'} spacing={7} >
+      <Stack direction={'row'} spacing={10} m="auto" w={"650px"}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -139,7 +147,7 @@ import img from "../Images/Surveyguru1.png"
                     color: linkHoverColor,
                   }}>
                   {navItem.label}
-                  <Icon color={'black.200'} w={6} h={10} as={ChevronDownIcon} />
+                  <Icon color={'black.200'} w={6} h={10} ml="3" as={ChevronDownIcon} />
                 </Link>
               </PopoverTrigger>
   
@@ -233,6 +241,10 @@ import img from "../Images/Surveyguru1.png"
     );
   };
   
+
+
+
+  // .............................................................................................
   const MobileNav = () => {
     return (
       <Stack

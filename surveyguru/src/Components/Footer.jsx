@@ -19,16 +19,17 @@ import { ReactNode } from 'react';
 export default function Footer(){
 return(
     <>
-        <Stack width="1400px" h="380px" m="auto" mt="100px">
-        <Flex direction={"column"} gap="50px" color="#73747A">
+        <Stack width="1380px" h="240px" m="auto" mt="50px" bo>
+        <Flex direction={"column"} gap="40px" color="#73747A" >
         
-             <Flex  direction={"row"} gap="100px">
-             <Box>
+             <Flex  direction={"row"} gap="115px" >
+             <Box bw={100} height="25px" >
                 <Text>Community:</Text>
+
               </Box>
-              <Flex direction={"row"} gap="20px" color="#73747A">
+              <Flex direction={"row"} gap="5px" color="#73747A" >
            
-                <Text>Developers</Text>
+                <Text >Developers</Text>
               
                <Text color="black">•</Text>
                 <Text>Facebook</Text>
@@ -52,12 +53,12 @@ return(
              
 
 
-             <Flex  direction={"row"} gap="100px" mt="-10px">
-             <Box>
+             <Flex  direction={"row"} gap="98px" mt="-10px"  h="25px">
+             <Box w={100} height="25px">
                 <Text>About Us:</Text>
               </Box>
 
-              <Flex direction={"row"} gap="20px" h="100px" ml="20px" w="1400px"  color="#73747A">
+              <Flex direction={"row"} gap="4px" h="25px" ml="20px" w="1400px"  color="#73747A" >
              <Text>Leadership Team</Text>
               
               <Text color="black">•</Text>
@@ -90,11 +91,11 @@ return(
               </Flex>
              </Flex>
 
-             <Flex  direction={"row"} gap="120px"  mt="-50px"> 
-             <Box>
+             <Flex  direction={"row"} gap="100px"     > 
+             <Box  w={100} height="25px"  >
                 <Text>Policies:</Text>
               </Box>
-              <Flex direction={"row"} gap="20px" color="#73747A">
+              <Flex direction={"row"} gap="5px" color="#73747A" >
            
                 <Text>Terms of Use</Text>
               
@@ -116,12 +117,12 @@ return(
              
               </Flex>
              </Flex>
-             <Flex  direction={"row"} gap="100px">
-             <Box>
+             <Flex  direction={"row"} gap="100px"  >
+             <Box  w={100} height="25px">
                 <Text>Use Cases:</Text>
               </Box>
 
-              <Flex direction={"row"} gap="20px" color="#73747A">
+              <Flex direction={"row"} gap="5px" color="#73747A" >
            
                 <Text>
 Online Polls</Text>

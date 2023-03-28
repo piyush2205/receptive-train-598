@@ -28,10 +28,10 @@ export default function BlogPostWithImage() {
           mt={-6}
           mx={-6}
           mb={6}
-          pos={'relative'}>
+          >
           <Image
             src={
-              'https://prod.smassets.net/assets/cms/sm/uploads//golden-state-warriors.png'
+              'https://prod.smassets.net/assets/content/sm/golden-state-warriors.png'
             }
             alt="zyx"
             layout={'fill'}
@@ -88,7 +88,7 @@ export default function BlogPostWithImage() {
           pos={'relative'}>
           <Image
             src={
-              'https://prod.smassets.net/assets/cms/sm/uploads//blog-tile-card.png'
+              'https://prod.smassets.net/assets/content/sm/blog-tile-card.png'
             }
             alt="zyx"
             layout={'fill'}
@@ -144,7 +144,7 @@ export default function BlogPostWithImage() {
           pos={'relative'}>
           <Image
             src={
-              'https://prod.smassets.net/assets/cms/sm/uploads//help-center-tile.png'
+              'https://prod.smassets.net/assets/content/sm/help-center-tile.png'
             }
             alt="zyx"
             layout={'fill'}

@@ -1,0 +1,33 @@
+.css-x1ay3 {
+    position: static !important;
+}
+
+.css-wi0tni{
+    position: static  !important;
+}
+
+.chakra-button{
+    position: static  !important;
+}
+
+.css-640u4w{
+    position: static  !important;
+}
+
+
+button.chakra-button.css-i857na {
+    /* margin-left: 200px; */
+   padding: 25px 40px;
+    margin-top: 50px;
+}
+
+@media all and (max-width:1220px) {
+    .css-n1pq1k{
+        width: auto !important;
+      
+    }
+}
+
+@media all and (max-width:720px) {
+    
+}
